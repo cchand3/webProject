@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
   createTable(reviewData);
 
   // adds a submit event listener to the form
-  const form = document.querySelector('.review-form-input-area');
+  const form = document.querySelector('.reviewFormInputArea');
   form.addEventListener('submit', function(event) {
 
     // prevents the default behavior of the form (i.e. reloading the page) when the form is submitted
