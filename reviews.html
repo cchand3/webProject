@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Index Page" />
+    <meta name="author" content="Chirag Chand" />
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>Player reviews</title>
+</head>
+<body class="review-page">
+    <nav>
+        <button><a href="index.html">Home</a></button>
+        <button><a href="info.html">Info</a></button>
+        <button><a href="reviews.html">Reviews</a></button>
+        <button><a href="about.html">About</a></button>
+    </nav>
+
+    <main>
+       
+        <section class="reviewForm">
+            <h2>Create your own review here.</h2>
+                        <form class="reviewFormInputArea" action="#" method="post">
+              <span class="nameDateForm">
+                <div class="nameForm">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="dateForm">
+                  <label for="date">Date:</label>
+                  <input type="date" id="date" name="date" required>
+                </div>
+              </span>
+                <div class="ratingForm">
+                  <label for="rating">Rating:</label>
+                  <input type="radio" id="rating1" name="rating" value="1" required>
+                  <label for="rating1">1</label>
+                  <input type="radio" id="rating2" name="rating" value="2">
+                  <label for="rating2">2</label>
+                  <input type="radio" id="rating3" name="rating" value="3">
+                  <label for="rating3">3</label>
+                  <input type="radio" id="rating4" name="rating" value="4">
+                  <label for="rating4">4</label>
+                  <input type="radio" id="rating5" name="rating" value="5">
+                  <label for="rating5">5</label>
+                </div>
+                <div class="reviewForm">
+                  <label for="review">Review:</label>
+                  <br>
+                  <textarea id="review" name="review" required></textarea>
+                </div>
+                <button type="submit">Create</button>
+              </form>
+              
+        </section>
+
+    <section class="reviewPage">
+        <h1>Player Reviews</h1>
+        <table>
+        <thead>
+          </thead>
+            <tbody id="reviewTable">
+          <!-- Dynamically create the reviews here -->
+            </tbody>
+        </table>
+    </section>
+    <div class="subscription">
+        <h2>Don't want to miss out? Join our newsletter!</h2>
+        <form>
+            <label for="email">E-mail: </label>
+            <input type="email" id="email" name="email" action="https://httpbin.org/post" placeholder="Enter your email address">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+    </main>
+
+    <script src="data.js"></script>
+</body>
+</html>
