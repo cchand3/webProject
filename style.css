@@ -168,6 +168,9 @@ button[type="submit"]:hover {
     }
 }
 
+span {
+    padding : 10px;
+}
 
 /* reviews Page */
 
@@ -185,7 +188,6 @@ tbody {
 
 .reviewPage {
     padding-top: 50px;
-    max-width: 800px;
     margin: 0 auto;
 }
 
